@@ -6,8 +6,6 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import 'bootstrap' 
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default {
   name: 'app',
@@ -32,8 +30,5 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.card {
-  background: none;
 }
 </style>

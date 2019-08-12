@@ -1,6 +1,6 @@
 <template>
   <div class="container pt-3">
-    <div class="card card-body mb-3 border-0">
+    <div class="card card-body mb-3 border-0" style="background: none;">
       <div class="row text-center">
         <div class="col">
           <div class="card-body">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="card card-body mb-3 border-0">
+    <div class="card card-body mb-3 border-0" style="background: none;">
       <div class="row">
         <div class="col">
           <div class="text-center" v-if="gameStarted">
@@ -49,15 +49,15 @@
         </div>
       </div>
     </div>
-    <div class="card card-body mb-3 border-0">
+    <div class="card card-body mb-3 border-0" style="background: none;">
       <div class="row">
         <div class="col text-center">
-          <div v-for="player in playerStatus" :key="player">
+          <div v-for="(player, i) in playerStatus" :key="i">
             <div class="bg-primary text-white">{{ player }}</div>
           </div>
         </div>
         <div class="col text-center">
-          <div v-for="monster in monsterStatus" :key="monster">
+          <div v-for="(monster, i) in monsterStatus" :key="i">
             <div class="bg-danger text-white">{{ monster }}</div>
           </div>
         </div>
